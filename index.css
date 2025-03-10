@@ -1,0 +1,118 @@
+@import url("/styles/defaults.css") layer(defaults);
+
+main {
+  align-content: center;
+  background: var(--color-very-dark-blue);
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 5.5rem 1.5rem;
+}
+
+.component {
+  & {
+    background: var(--color-dark-desaturated-blue);
+    border-radius: var(--radius-small);
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    max-width: 69.375rem;
+    overflow: clip;
+
+    @media (max-width: 960px) {
+      flex-flow: column-reverse;
+      max-width: 20.4375rem;
+      text-align: center;
+    }
+  }
+
+  @scope (&) {
+    .content {
+      & {
+        display: flex;
+        flex-flow: column;
+        max-width: 23.75rem;
+        padding: 4.5rem 4.5rem 3.625rem;
+
+        @media (max-width: 960px) {
+          padding: 1.9375rem;
+        }
+      }
+
+      & h1 {
+        & {
+          line-height: 1.222;
+          margin-bottom: 1.5rem;
+
+          @media (max-width: 960px) {
+            font-size: 1.75rem;
+          }
+        }
+
+        & span {
+          color: var(--color-soft-violet);
+        }
+      }
+
+      .info {
+        & {
+          display: flex;
+          gap: 1rem;
+          justify-content: space-between;
+          margin: unset;
+          margin-top: auto;
+          max-width: 22rem;
+          padding: unset;
+          padding-top: 1rem;
+
+          @media (max-width: 960px) {
+            flex-flow: column;
+          }
+        }
+
+        & li {
+          & {
+            color: hsl(0, 0%, 100%, 60%);
+            display: flex;
+            flex-flow: column;
+            font-family: "Lexend Deca";
+            font-size: .75rem;
+            gap: .25rem;
+            letter-spacing: 1px;
+            line-height: 2;
+            text-transform: uppercase;
+          }
+
+          & strong {
+            color: white;
+            font-family: "Inter";
+            font-size: 1.5rem;
+            letter-spacing: initial;
+            line-height: normal;
+            text-transform: initial;
+          }
+        }
+      }
+    }
+
+    & div.illustration {
+      & {
+        background: var(--color-soft-violet);
+      }
+
+      & img {
+        display: block;
+        mix-blend-mode: multiply;
+        height: 100%;
+        object-fit: none;
+        object-position: top;
+        opacity: 75%;
+        width: 100%;
+
+        @media (max-width: 960px) {
+          height: unset;
+          object-fit: cover
+        }
+      }
+    }
+  }
+}

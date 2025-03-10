@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url("/assets/fonts/Inter/static/Inter_18pt-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  src: url("/assets/fonts/Inter/static/Inter_18pt-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  src: url("/assets/fonts/Lexend_Deca/static/LexendDeca-Regular.ttf");
+}
+
+:root {
+  color: white;
+  font: 1rem / 1.665 "Inter", sans-serif;
+  
+  --color-very-dark-blue: hsl(233, 50%, 7%);
+  --color-dark-desaturated-blue: hsl(244, 38%, 16%);
+  --color-soft-violet: hsl(277, 64%, 61%);
+  --radius-small: 8px;
+}
+
+body {
+  font-size: .9375rem;
+  margin: unset;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: unset;
+}
+
+p {
+  margin: unset;
+  opacity: .75;
+}
